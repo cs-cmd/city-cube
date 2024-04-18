@@ -12,3 +12,6 @@ dist-ssr
 # Editor directories and fles
 .vscoe/*
 !.vscode/extensions.json
+
+# Linux swap files
+*.swp
