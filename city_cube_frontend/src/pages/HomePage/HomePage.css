@@ -1,0 +1,42 @@
+.home-page {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  .image-section {
+    background-image: url("/images/storefront.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0px;
+    width: 100%;
+    .blur-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      backdrop-filter: blur(5px) brightness(50%);
+      -webkit-backdrop-filter: blur(5px) brightness(50%);
+      .tagline {
+        margin-top: 3rem;
+      }
+
+      .transparant-fade {
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0),
+          var(--main-background)
+        );
+        width: 100%;
+        height: 50px;
+      }
+    }
+  }
+
+  .home-page-image-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 50px 0px;
+  }
+}

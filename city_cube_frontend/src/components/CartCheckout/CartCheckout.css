@@ -1,0 +1,8 @@
+.cart-checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .page-button {
+        width: 75%;
+    }
+}

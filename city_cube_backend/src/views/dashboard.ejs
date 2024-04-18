@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityCube Admin Dashboard</title>
+    <link rel='stylesheet' href='styles/index.css'/>
+</head>
+<body>
+    <%- include('components/header') %>
+
+    <main class='main-section'>
+        <form class="form">
+            <input 
+                type='submit' 
+                value='Browse menu items'
+                class='page-button regular'
+                formmethod='GET'
+                formaction='dashboard/menu-items'/>
+
+            <input 
+                type="submit"
+                value="Create Admin account"
+                class="page-button regular"
+                formmethod='GET'
+                formaction="dashboard/create-admin"/>
+                
+            <input
+                type="submit"
+                value="Logout"
+                class="page-button secondary"
+                formmethod="POST"
+                formaction="logout"/>
+        </form>
+    </main>
+</body>
+</html>

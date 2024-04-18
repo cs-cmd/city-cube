@@ -1,0 +1,29 @@
+.expanding-border {
+  --expanding-border-radius: 50px;
+
+  width: 100%;
+  height: 2px;
+  display: flex;
+  justify-content: center;
+
+  .border-inner {
+    width: 0px;
+    transition: width var(--quick-time);
+    background-color: var(--header-font-color);
+    height: 100%;
+    &:first-of-type {
+      border-top-left-radius: var(--expanding-border-radius);
+      border-bottom-left-radius: var(--expanding-border-radius);
+    }
+    &:last-of-type {
+      border-top-right-radius: var(--expanding-border-radius);
+      border-bottom-right-radius: var(--expanding-border-radius);
+    }
+  }
+}
+
+/* Anything that is the parent of an expanding border gets hovered,
+ * expand borders */
+*:hover > .expanding-border .border-inner {
+  width: 100%;
+}

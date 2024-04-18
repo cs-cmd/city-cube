@@ -1,0 +1,25 @@
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid var(--header-font-color);
+  padding: 10px;
+  border-radius: var(--border-radius);
+
+  .total-item-price-line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .adjust-amount-buttons {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+  }
+  .page-button {
+    height: 2rem;
+    width: 100%;
+  }
+}

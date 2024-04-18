@@ -1,0 +1,15 @@
+.cart-page {
+  display: flex;
+  justify-content: center;
+  .cart-page-container {
+    display: flex;
+    width: min(1000px, 100%);
+    gap: 15px;
+    & > .cart-section {
+      width: 75%;
+    }
+    & > .checkout-section {
+      width: 25%;
+    }
+  }
+}
